@@ -3,7 +3,6 @@ void inputReact(char mychar, int HowManySongs, int currentSong){
 //What if user wants to play song no.5 but it does not exitst
 //What ig he plays next
 
-
 //p for Play and Pause
 //n for Next
 //r for remove
@@ -13,26 +12,25 @@ void inputReact(char mychar, int HowManySongs, int currentSong){
  String song = String(currentSong)+fileFormat;
   int state=2;
 char buff[7];
-
 song.toCharArray(buff, 7);
 char *p = buff;
- Serial.println(buff);
 //END
 
    if(mychar == 'p' && tmrpcm.isPlaying()){
-      tmrpcm.pause();
+      tmrpcm.pause();   //PAUSE SONG
     } 
     else if(mychar == 'p'){ 
-      tmrpcm.play(buff);
+      tmrpcm.play(buff);      //PLAY SONG
     } 
     else if(mychar == 'n'){
-      tmrpcm.play(buff);
-        //Serial.println(buff);
+      tmrpcm.play(buff);    //PLAY NEXT SONG
         } 
     else if(mychar == 'r'){
       tmrpcm.disable();
   Serial.println("Remove file? (y/n)");
    SD.remove(buff);
   Serial.println(state);
+  //REMOVE SONG
     }
 }
+//SR

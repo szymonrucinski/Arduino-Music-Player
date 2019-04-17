@@ -23,6 +23,8 @@ int SizeOfArray(File dir, int numTabs) {
     
     entry.close();
   }
+  //Serial.println(k);
         return k;
 
 }
+//SR

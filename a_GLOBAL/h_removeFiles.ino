@@ -6,3 +6,4 @@ void  removeFiles(char filename)
   SD.remove(filename);
   else Serial.println("Failure");Serial.println(filename);
 }
+//SR
