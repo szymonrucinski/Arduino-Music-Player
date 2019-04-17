@@ -9,7 +9,7 @@ char mychar;                      //character used for audio playing
 const int SD_ChipSelectPin = 4;   //SD_CARD PIN
 File root;
 
-int HowManySongs;
+ int HowManySongs;
 int currentSong =1;
 
 
@@ -18,6 +18,6 @@ int currentSong =1;
  void bootingMenu();
  void sdCardFailure();
  void instruction();
- void removeFiles(String filename);
+
  int SizeOfArray(File dir, int numTabs);
- void inputReact(char mychar);
+ void inputReact(char mychar, int HowManySongs, int currentSongs);

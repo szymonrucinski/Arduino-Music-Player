@@ -1,5 +1,6 @@
 void setup(){
 
+
   tmrpcm.speakerPin = 9;  //SPEAKER PIN
   Serial.begin(9600);     //SERIAL MONITOR PORT/FREQUENCY
   sdCardFailure();        //Check if SDcard works correctly
