@@ -22,7 +22,7 @@ str.toCharArray(b,1);
       tmrpcm.pause();
     } 
     else if(mychar == 'p'){ //send the letter p over the serial monitor to start playback
-      tmrpcm.play(b+);
+      tmrpcm.play("Filename.wav");
     } 
     else if(mychar == 'n'){ //send the letter p over the serial monitor to start playback
       tmrpcm.play("1.wav");

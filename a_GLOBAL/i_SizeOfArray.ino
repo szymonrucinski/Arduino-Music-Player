@@ -1,4 +1,6 @@
 int SizeOfArray(File dir, int numTabs) {
+        Serial.print("\nLIST OF FILES ON SD CARD\n");
+
   int k=0;
   while (true) {
 
@@ -21,7 +23,6 @@ int SizeOfArray(File dir, int numTabs) {
     
     entry.close();
   }
-        Serial.print(k);
         return k;
 
 }
