@@ -1,0 +1,38 @@
+Project subject: Music player
+installing appropriate card in the SD module and use its contents to play audio 
+
+Group members and team leader:
+Szymon Ruciñski 217860 (TEAM LEADER)
+Iga Wójcik 217867
+Anna Preczyñska 217858
+
+Selected device:
+ Arduino Uno
+
+The schedule listing activities to be completed until the mid-term checkpoint:
+ - reading data from SD module
+ - displaying information from the card on the screen
+- removing songs from SD card
+
+The schedule listing activities to be completed for the final project delivery:
+ - displaying current song (length, artist, album)
+ - play music through out the speaker
+ - set of buttons to control played audio (play, pause, next, previous)
+ - volume adjustment
+
+List of functionalities:
+ - reading data from SD module
+ - displaying information from the card on the screen
+ - displaying current song (length, artist, album)
+ - play music through out the speaker
+ - set of buttons to control played audio (play, pause, next, previous)
+ - volume adjustment
+ - removing songs from SD 
+
+//EVERYTHING THAT WE HAVE MANAGED COMPLETE
+
+ - reading data from SD module
+ - displaying information from the card on the screen
+- removing songs from SD card
+ - play music through out the speaker
+ - set of buttons to control played audio (play, pause, next, previous) //currently we are using are using keyboard and the serial ports to communicate with the device
