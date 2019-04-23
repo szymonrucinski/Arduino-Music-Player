@@ -7,11 +7,12 @@
 
 //Libraries
 #include <SPI.h>
-#include <SD.h>                        // SD library
-#include <TMRpcm.h>                   //Audio library
+#include <SD.h>                                         // SD library
+#include <TMRpcm.h>                                     //Audio library
 
 //classes and data types
 TMRpcm tmrpcm;                    // create an object for use in this sketch
+
 char mychar;                      //character used for audio playing
 const int SD_ChipSelectPin = 4;   //SD_CARD PIN
 File root;                        //file root required for SD CARD READOUT

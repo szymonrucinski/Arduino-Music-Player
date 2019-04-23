@@ -1,6 +1,9 @@
 //EVERYTHING THAT NEEDS TO BE SET UP RIGHT BEFORE THE LOOP PROCEDURE
 void setup(){
   tmrpcm.speakerPin = 9;  //SPEAKER PIN
+  tmrpcm.setVolume(5);
+tmrpcm.volume(1);
+tmrpcm.quality(1);
   Serial.begin(9600);     //SERIAL MONITOR PORT/FREQUENCY
   sdCardFailure();        //Check if SDcard works correctly
   bootingMenu();          //booting menu 
