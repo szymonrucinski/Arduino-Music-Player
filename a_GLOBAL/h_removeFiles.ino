@@ -1,6 +1,5 @@
 void  removeFiles(char filename)
-{
-    mychar=Serial.read();
+{    mychar=Serial.read();
   Serial.println("Remove file? (y/n)");
   if(mychar== 'y')
   SD.remove(filename);
