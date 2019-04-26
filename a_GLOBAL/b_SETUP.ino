@@ -7,20 +7,18 @@ tmrpcm.volume(1);
 tmrpcm.quality(0);
 tmrpcm.setVolume(6);
 int number;
-  
-  Serial.begin(9600);     //SERIAL MONITOR PORT/FREQUENCY
 
-  sdCardFailure();        //Check if SDcard works correctly
-  bootingMenu();          //booting menu 
+Serial.begin(9600);     //SERIAL MONITOR PORT/FREQUENCY
+sdCardFailure();        //Check if SDcard works correctly
+//bootingMenu();          //booting menu 
 
-
-  //PUT IT INTO THE FUNCTION
-  root = SD.open("/");    //Accessing root directory of SD card
-  HowManySongs=SizeOfArray(root,0);  //Use SizeOfArray to calculate amount of songs
-  root.close();
+//PUT IT INTO THE FUNCTION
+root = SD.open("/");    //Accessing root directory of SD card
+HowManySongs=SizeOfArray(root,0);  //Use SizeOfArray to calculate amount of songs
+root.close();
 
 root = SD.open("/");
-  //int* songNames=new int[HowManySongs]; //table of songNames containing song numbers
+//int* songNames=new int[HowManySongs]; //table of songNames containing song numbers
 array_pointer =(AssignNumericalValues(HowManySongs,root, 0));
 //Serial.println(*array_pointer);
 

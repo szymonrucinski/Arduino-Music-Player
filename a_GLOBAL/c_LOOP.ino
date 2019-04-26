@@ -4,12 +4,12 @@ void loop(){
     mychar = Serial.read(); //GETTING CHAR FROM KEYBOARD
     if(mychar=='n' || mychar=='r' || mychar =='p'){
 
- if(indexCounter>=HowManySongs-1)
-    indexCounter =0; currentSong=*array_pointer; 
+ if(indexCounter>=HowManySongs)
+    indexCounter=0; currentSong=*array_pointer; 
       
       if(mychar=='n'){
-        indexCounter++;
       currentSong=*(array_pointer+indexCounter);
+              indexCounter++;
       Serial.println(indexCounter);
             Serial.println(currentSong);
 

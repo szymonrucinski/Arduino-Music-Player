@@ -10,7 +10,6 @@ void inputReact(char mychar, int HowManySongs, int currentSong){
  //converting from into to array of character that can be send as an argument to xxx.play() etc.
  String fileFormat = ".wav";
  String song = String(currentSong)+fileFormat;
-  int state=2;
 char buff[7];
 song.toCharArray(buff, 7);
 char *p = buff;
@@ -29,7 +28,8 @@ char *p = buff;
       tmrpcm.disable();
   Serial.println("Remove file? (y/n)");
    SD.remove(buff);
-  Serial.println(state);
+   setup();
+   loop();
   //REMOVE SONG
     }
 }
