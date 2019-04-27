@@ -1,3 +1,5 @@
+#include <SD.h>
+
 int SizeOfArray(File dir, int numTabs) {
         Serial.print("\nLIST OF FILES ON SD CARD\n");
 
@@ -14,7 +16,7 @@ int SizeOfArray(File dir, int numTabs) {
     }
    // Serial.print(entry.name());
     String FileName = entry.name();
-    if(FileName.indexOf(".WAV")>0) {
+    if(FileName.indexOf(".WAV")>0 &&  FileName.indexOf("~")<=0) {
       k++;
       Serial.print(FileName+"\n");
       
