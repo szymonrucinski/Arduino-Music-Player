@@ -1,7 +1,7 @@
 //THE ONE WHO ALWAYS STAYS IN THE LIMELIGHT
 void loop(){ 
   
-    mychar = Serial.read(); //GETTING CHAR FROM KEYBOARD
+    mychar = ReadCharFromBT();; //GETTING CHAR FROM KEYBOARD
     if(mychar=='n' || mychar=='r' || mychar =='p' ||mychar =='q' || mychar =='l'){
 
  if(indexCounter>=HowManySongs)

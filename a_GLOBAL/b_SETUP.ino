@@ -2,6 +2,12 @@
 void setup(){
   
 //DEFINING PINS AND SOUND SETTINGS
+  bluetoothSerial.begin(9600);
+  lcd.begin();   // Inicjalizacja LCD 
+  lcd.backlight(); // zalaczenie podwietlenia
+  lcd.print("Hello, world!"); //tekst
+  delay(1000);
+
 if(initialAudioSettings==false)
 {
 tmrpcm.speakerPin = 9;  //SPEAKER PIN
