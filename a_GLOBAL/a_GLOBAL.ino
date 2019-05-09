@@ -9,14 +9,12 @@
 #include <SD.h>                                        
 #include <TMRpcm.h>  
 #include <Wire.h>
-#include <LiquidCrystal_I2C.h> 
 #include <Wire.h>
 #include<SoftwareSerial.h>                               
 #include "d_REACTIONTOINPUT.h"
 #include "f_SDCARDFAILURE.h"
 #include "i_SIZEOFARRAY.h"
 #include "e_ASSIGNNUMERICALVALUES.h"
-LiquidCrystal_I2C lcd(0x27, 16, 2);  // Ustawienie adresu ukladu na 0x27
 
 
 

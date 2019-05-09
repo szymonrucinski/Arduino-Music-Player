@@ -17,7 +17,7 @@ int* songNames=new int [HowManySongs];
     }
    // Serial.print(entry.name());
     String FileName = entry.name();
-    if(FileName.indexOf(".WAV")>0) {
+    if(FileName.indexOf(".WAV")>0 &&  FileName.indexOf("~")<=0) {
       StringToNumber = FileName.toInt();
 
       songNames[k]=StringToNumber;

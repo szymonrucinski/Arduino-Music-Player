@@ -3,10 +3,6 @@ void setup(){
   
 //DEFINING PINS AND SOUND SETTINGS
   bluetoothSerial.begin(9600);
-  lcd.begin();   // Inicjalizacja LCD 
-  lcd.backlight(); // zalaczenie podwietlenia
-  lcd.print("Hello, world!"); //tekst
-  delay(1000);
 
 if(initialAudioSettings==false)
 {
@@ -18,7 +14,7 @@ initialAudioSettings=true;
 }
 
 int number;
-
+bluetoothSerial.begin(9600);
 Serial.begin(9600);     //SERIAL MONITOR PORT/FREQUENCY
 sdCardFailure(SD_ChipSelectPin);        //Check if SDcard works correctly
 
