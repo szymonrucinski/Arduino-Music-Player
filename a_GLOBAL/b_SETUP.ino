@@ -1,8 +1,8 @@
 //EVERYTHING THAT NEEDS TO BE SET UP RIGHT BEFORE THE LOOP PROCEDURE
 void setup(){
-  
+  File root;                        //file root required for SD CARD READOUT
+
 //DEFINING PINS AND SOUND SETTINGS
-  bluetoothSerial.begin(9600);
 
 if(initialAudioSettings==false)
 {
@@ -13,10 +13,11 @@ tmrpcm.setVolume(6);
 initialAudioSettings=true;
 }
 
-int number;
-bluetoothSerial.begin(9600);
-Serial.begin(9600);     //SERIAL MONITOR PORT/FREQUENCY
-sdCardFailure(SD_ChipSelectPin);        //Check if SDcard works correctly
+
+//Serial.begin(9600);     //SERIAL MONITOR PORT/FREQUENCY
+mySerial.begin(9600);
+
+sdCardFailure(4);        //Check if SDcard works correctly
 
 //PUT IT INTO THE FUNCTION
 root = SD.open("/");    //Accessing root directory of SD card
@@ -31,7 +32,11 @@ array_pointer =(AssignNumericalValues(HowManySongs,root, 0));
 root.close();
 ///////////////////////////////////////////////////////////////////
 
-  Serial.println("Initizialization done!"); //WELL DONE!
+
+
+lcd.init();
+lcd.backlight();
+
   
 }
 
